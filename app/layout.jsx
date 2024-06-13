@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "promptpedia",
+  title: "prompt_play",
   description: "Discover & share AI prompt",
 };
 

@@ -2,10 +2,8 @@ import Prompt from "@models/prompt";
 import { connectToDB } from "@utils/database";
 
 export const GET = async (request) => {
-  console.log(process.env.MONGODB_URI); // Debugging environment variable
   try {
     await connectToDB();
-    console.log("working");
 
     const prompts = await Prompt.find({}).populate("creator");
 
